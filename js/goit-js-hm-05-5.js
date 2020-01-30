@@ -7,7 +7,7 @@ class Car {
    * в консоль значения свойств maxSpeed, speed, isOn, distance и price.
    */
   static getSpecs(car) {
-    console.log(car);
+    console.log(`maxSpeed: ${car.maxSpeed}, speed: ${car.speed}, isOn: ${car.distance}, price: ${car._price}`);
   }
   /*
    * Конструктор получает объект настроек.
@@ -37,11 +37,11 @@ class Car {
    * Добавь геттер и сеттер для свойства price,
    * который будет работать с свойством цены автомобиля.
    */
-  get _price() {
-    return this.price;
+  get price(){
+    return this._price;
   }
-  set _price(_price) {
-    this.price = _price;
+  set price(price) {
+    this._price = price;
   }
 
   /*
